@@ -44,6 +44,8 @@ python3 -m http.server
 
 5. Click the "Predict" button to process the uploaded image and display the predicted probability of the image containing a number.
 
+6. tensorflowjs_converter --input_format=keras ./data/keras.h5 ./tmp/tfjs_model 
+
 ## Contributing
 
 Contributions are welcome! If you find any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request.
