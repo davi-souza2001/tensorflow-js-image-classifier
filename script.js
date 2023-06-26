@@ -1,4 +1,5 @@
-const MODEL_PATH = './tmp/test/model.json'
+// const MODEL_PATH = './converted-model/model.json'
+const MODEL_PATH = './tmp/model.json'
 
 async function loadModel(modelPath) {
 	return tf.loadLayersModel(modelPath)

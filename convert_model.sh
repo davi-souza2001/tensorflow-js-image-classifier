@@ -12,10 +12,13 @@
 # installed and available in your environment.
 
 # Set the input and output paths
-input_model_path="./data/tf-keras-model.h5"
-output_model_path="./converted-model"
+# input_model_path="./data/tf-keras-model.h5"
+# output_model_path="./converted-model"
+input_model_path="./cancer/inception_cnn_model.h5"
+output_model_path="./tmp"
 
 # Run the TensorFlow.js converter
+# tensorflowjs_converter --input_format=keras $input_model_path $output_model_path
 tensorflowjs_converter --input_format=keras $input_model_path $output_model_path
 
 # Check the exit code to determine if the conversion was successful

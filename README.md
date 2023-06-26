@@ -22,6 +22,8 @@ To use this project, please follow these steps:
 
    This script will use the `tensorflowjs_converter` tool to convert the `./data/tf-keras.h5` file to the JSON format and save it as `./converted-model/model.json`. Make sure you have TensorFlow.js installed, and the `tensorflowjs_converter` command is available in your environment.
 
+   tensorflowjs_converter --input_format=keras ./cancer/cancer.h5 ./tmp 
+
 ## Usage
 
 The project includes sample images that you can use to test the application. These images are located in the ./sample-images folder. Please ensure that each image is in PNG format and dimensions of 28x28 pixels.
@@ -43,8 +45,6 @@ python3 -m http.server
 4. Click on the "Choose File" button to upload an image from the `./sample-images` folder or any other image that meets the requirements.
 
 5. Click the "Predict" button to process the uploaded image and display the predicted probability of the image containing a number.
-
-6. tensorflowjs_converter --input_format=keras ./data/keras.h5 ./tmp/tfjs_model 
 
 ## Contributing
 
